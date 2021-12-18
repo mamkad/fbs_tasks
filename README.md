@@ -20,11 +20,12 @@
 Исходный код: [ссылка](https://github.com/mamkad/fbs_tasks/tree/main/gRPC)
 Необходимы следующие зависимости:
 
-    `go get -u google.golang.org/grpc
+    go get -u google.golang.org/grpc
     go get github.com/golang/protobuf/protoc-gen-go
-    github.com/protocolbuffers/protobuf'
+    github.com/protocolbuffers/protobuf
     
 Для компиляции достаточно `go build main.go`
 После запуска main сервер будет запущен. Для проверки работы был создан клиент, он находится в файле: [client.go](https://github.com/mamkad/fbs_tasks/blob/main/gRPC/client.go). Клиент компилируется отдельно и запускается после запуска сервера. Клиент соединяется по каналу 8080 с сервером и посылает ему два числа. В ответе будут получены номера и числа фибоначчи.
 
+## Реализованные пункты
 Были реализованы все пункты, кроме 4.
